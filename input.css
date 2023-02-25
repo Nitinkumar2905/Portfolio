@@ -56,9 +56,9 @@
   transition: all 0.3s ease-in-out;
 }
 
-.hamburger:hover {
+/* .hamburger:hover {
   cursor: pointer;
-}
+} */
 
 #hamburger-5.is-active {
   -webkit-transform: rotate(90deg);
@@ -106,4 +106,10 @@
   -ms-transform: translateY(-15px) rotate(-45deg);
   -o-transform: translateY(-15px) rotate(-45deg);
   transform: translateY(-15px) rotate(-45deg);
+}
+
+@media (max-width: 767px) { 
+    .mobile-menu{
+        display: none;
+    }
 }
