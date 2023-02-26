@@ -7,8 +7,8 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="./input.css">
 </head>
-<body class=" bg-gray-200 h-[120vh]">
-    <header class="fixed top-0 left-0 w-full block md:flex h-16  bg-green-100 md:bg-green-200 head-bg">
+<body class=" bg-green-100 h-[120vh] w-full">
+    <header class="sticky top-0 left-0 w-full lg:w-[95%] lg:mx-auto block md:flex h-16  bg-green-100 head-bg">
         <nav class="flex w-full md:w-[30%] lg:w-[40%] h-full items-center">
             <div class="px-2 flex items-end space-x-2">
                 <img class="h-12 rounded-full cursor-pointer" src="./img/profile-pic.jpg" alt="">
@@ -27,21 +27,19 @@
         </nav>
 
         <!-- mobile -menu -->
-        <div  class="MyDiv mobile-menu flex-col md:hidden w-full h-full">
+        <div  class="MyDiv mobile-menu flex md:hidden w-full h-[20vh] bg-green-100 border-y-[1px] border-green-600 space-x-2 pt-4">
             <div class="flex flex-col w-full items-center">
-                <!-- <li class="w-full  border-t-[2px]  border-gray-500 h-12 px-2 py-2 list-none text-green-500 text-center bg-green-200"><a class="text-xl hover:font-semibold" href="#">Home</a></li> -->
-                <li class="w-full  border-t-[2px]  border-gray-500 h-12 px-2 py-2 list-none text-green-500 text-center bg-green-200"><a class="text-xl hover:font-semibold" href="#">About</a></li>
-                <li class="w-full  border-t-[2px]  border-gray-500 h-12 px-2 py-2 list-none text-green-500 text-center bg-green-200"><a class="text-xl hover:font-semibold" href="#">Skills</a></li>
-                <li class="w-full  border-t-[2px]  border-gray-500 h-12 px-2 py-2 list-none text-green-500 text-center bg-green-200"><a class="text-xl hover:font-semibold" href="#">Work</a></li>
+                <li class="w-full  h-12 px-2 py-2 list-none text-green-600 text-center"><a class="text-xl hover:text-black font-semibold" href="#">Skills</a></li>
+                <li class="w-full  h-12 px-2 py-2 list-none text-green-600 text-center"><a class="text-xl hover:text-black font-semibold" href="#">Work</a></li>
             </div>
 
-            <div class="flex flex-row border-y-[2px] border-gray-500">
-                <button class="w-1/2 border-r-[1.5px] border-gray-500 bg-green-400 cursor-auto px-2 py-2 "><a class="text-green-50 hover:font-semibold text-xl" href="#">Contact Me</a></button>
-                <button class="w-1/2 border-l-[1.5px] border-gray-500 bg-green-400 cursor-auto px-2 py-2 "><a class="text-green-50 hover:font-semibold text-xl" href="#">Download CV</a></button>
+            <div class="flex flex-col w-full items-center space-y-2 ">
+                <button class="h-12 w-[150px] cursor-auto px-2 py-2 border-green-600 rounded-md border-2  "><a class="text-green-600 hover:text-black font-semibold text-xl" href="#">Contact Me</a></button>
+                <button class="h-12 w-[150px] cursor-auto px-2 py-2 border-green-600 rounded-md border-2  "><a class="text-green-600 hover:text-black font-semibold text-xl" href="#">Download CV</a></button>
             </div>
         </div>
 
-       <menu class="hidden md:flex w-[70%] lg:w-[60%] items-center space-x-2 ">
+       <menu class="hidden md:flex w-[70%] lg:w-[60%] justify-end items-center space-x-2 ">
         <div class="flex w-full space-x-4 xl:space-x-8">
             <li class=""><a class="text-xl text-green-700 hover:text-black  font-semibold" href="#">About</a></li>
             <li class=""><a class="text-xl text-green-700 hover:text-black  font-semibold" href="#">Skills</a></li>
@@ -54,22 +52,33 @@
 
        </menu>
     </header>
+    <!-- hero section -->
+    <section class="hero-section flex w-full justify-center">
+        <main class="flex flex-col mt-10 w-[90%]">
+            <div class="flex flex-col flex-start  text-green-500 font-serif font-semibold text-xl">
+                Hi👋🏽, 
+                <span class="text-lg text-green-500">
+                    <span>This is</span>
+                    <span class="text-2xl text-green-600">Nitin kumar</span>
+                </span>
+            </div>
+            <div class=""><img class="h-52" src="./img/hero1.svg" alt=""></div>
 
-    <!-- mobile -menu -->
-    <!-- <div  class="hidden flex-row md:flex w-full h-full ">
-        <div class="flex flex-col w-full items-center">
-            <li class="w-full  border-y-[1px]  border-zinc-700 h-12 px-2 py-2 list-none text-yellow-500 text-center bg-zinc-800"><a class="text-lg" href="#">Home</a></li>
-            <li class="w-full  border-y-[1px]  border-zinc-700 h-12 px-2 py-2 list-none text-yellow-500 text-center bg-zinc-800"><a class="text-lg" href="#">About</a></li>
-            <li class="w-full  border-y-[1px]  border-zinc-700 h-12 px-2 py-2 list-none text-yellow-500 text-center bg-zinc-800"><a class="text-lg" href="#">Skills</a></li>
-            <li class="w-full  border-y-[1px]  border-zinc-700 h-12 px-2 py-2 list-none text-yellow-500 text-center bg-zinc-800"><a class="text-lg" href="#">Work</a></li>
-        </div>
-
-        <div class="flex flex-crow border-t-[1px] border-zinc-700">
-            <button class="w-1/2 border-r-[1.5px] border-zinc-700 bg-zinc-800 cursor-auto px-2 py-2 "><a class="text-white hover:text-yellow-500 text-xl" href="#">Contact Me</a></button>
-            <button class="w-1/2 border-l-[1.5px] border-zinc-700 bg-zinc-800 cursor-auto px-2 py-2 "><a class="text-white hover:text-yellow-500 text-xl" href="#">Download CV</a></button>
-        </div>
-
-    </div> -->
+            <div class="text-green-500 text-lg flex-wrap font-serif font-semibold">
+                <p>I'm <span class="text-green-600 text-2xl">frontend developer</span> and i like to craft solid and scalable websites with great user experience. </p>
+            </div>
+        </main>
+    </section>
+    <hr class="mt-12 h-[2px]  w-[90%] mx-auto bg-green-600">
+    <!-- skills & tools -->
+    <section class="hero-section flex w-full justify-center">
+        <main class="flex flex-col mt-5 w-[90%] space-y-2 font-serif">
+           <div class="text-green-800 font-semibold text-xl">SKILLS & TOOLS</div>
+           <span class="text-green-600 text-3xl font-serif font-semibold">My Toolbox & Things I Can Do</span>
+           <p class="text-green-500 text-xl font-serif font-semibold">The skills, tools and technologies i use to bring your products to life:</p>
+           <i class="devicon devicon-html5-plain" aria-hidden="true"></i>
+        </main>
+    </section>
 
 
 
