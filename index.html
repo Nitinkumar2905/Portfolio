@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="./input.css">
 </head>
 <body class=" bg-green-100 h-[120vh] w-full">
-    <header class="sticky top-0 left-0 w-full lg:w-[95%] lg:mx-auto block md:flex h-16  bg-green-100 head-bg">
+    <header class="sticky top-0 left-0 w-full lg:w-[80%] lg:mx-auto block md:flex h-20  bg-green-100 head-bg">
         <nav class="flex w-full md:w-[30%] lg:w-[40%] h-full items-center">
             <div class="px-2 flex items-end space-x-2">
                 <img class="h-12 rounded-full cursor-pointer" src="./img/profile-pic.jpg" alt="">
@@ -29,7 +31,7 @@
         <!-- mobile -menu -->
         <div  class="MyDiv mobile-menu flex md:hidden w-full h-[20vh] bg-green-100 border-y-[1px] border-green-600 space-x-2 pt-4">
             <div class="flex flex-col w-full items-center">
-                <li class="w-full  h-12 px-2 py-2 list-none text-green-600 text-center"><a class="text-xl hover:text-black font-semibold" href="#">Skills</a></li>
+                <li class="w-full  h-12 px-2 py-2 list-none text-green-600 text-center"><a class="text-xl hover:text-black font-semibold" href="#">Skills & Tools</a></li>
                 <li class="w-full  h-12 px-2 py-2 list-none text-green-600 text-center"><a class="text-xl hover:text-black font-semibold" href="#">Work</a></li>
             </div>
 
@@ -41,7 +43,7 @@
 
        <menu class="hidden md:flex w-[70%] lg:w-[60%] justify-end items-center space-x-2 ">
         <div class="flex w-full space-x-4 xl:space-x-8">
-            <li class=""><a class="text-xl text-green-700 hover:text-black  font-semibold" href="#">Skills</a></li>
+            <li class=""><a class="text-xl text-green-700 hover:text-black  font-semibold" href="#">Skills & Tools</a></li>
             <li class=""><a class="text-xl text-green-700 hover:text-black  font-semibold" href="#">Work</a></li>
         </div>
         <div class="flex space-x-4 w-[45rem] pl-4">
@@ -53,7 +55,7 @@
     </header>
     <!-- hero section -->
     <section class="hero-section flex w-full justify-center">
-        <main class="flex flex-col mt-10 w-[90%]">
+        <main class="flex flex-col mt-10 w-[90%] mx-auto px-2 md:w-[75%]">
             <div class="flex flex-col flex-start  text-green-500 font-serif font-semibold text-xl">
                 Hi👋🏽, 
                 <span class="text-lg text-green-500">
@@ -68,16 +70,76 @@
             </div>
         </main>
     </section>
-    <hr class="mt-12 h-[2px]  w-[90%] mx-auto bg-green-600">
+    <hr class="mt-12 h-[3px]  w-[90%] lg:w-[75%] mx-auto bg-green-600">
     <!-- skills & tools -->
-    <section class="hero-section flex w-full justify-center">
-        <main class="flex flex-col mt-5 w-[90%] space-y-2 font-serif">
+    <section class="hero-section flex flex-col w-full justify-center ">
+        <main class="flex flex-col mt-5 w-[90%] lg:w-[75%] space-y-5 font-serif  mx-auto">
            <div class="text-green-800 font-semibold text-xl">SKILLS & TOOLS</div>
            <span class="text-green-600 text-3xl font-serif font-semibold">My Toolbox & Things I Can Do</span>
            <p class="text-green-500 text-xl font-serif font-semibold">The skills, tools and technologies i use to bring your products to life:</p>
-           <i class="devicon devicon-html5-plain" aria-hidden="true"></i>
         </main>
+
+        <div class="flex flex-col my-10 w-[90%] lg:w-[75%] space-y-12 font-serif  mx-auto">
+            <div class="flex w-full flex-start space-x-6 mx-auto">
+                <div class="">
+                    <i class="text-4xl text-green-500  devicon-html5-plain" aria-hidden="true"></i>
+                    <p class="text-green-600 text-lg font-semibold">HTML5</p>
+                </div>
+                
+                <div class="">
+                    <i class="text-4xl text-green-500   devicon-css3-plain" aria-hidden="true"></i>
+                    <p class="text-green-600 text-lg font-semibold">CSS3</p>
+                </div>
+                
+                <div class="">
+                    <i class="text-4xl text-green-500  fab fa-js" aria-hidden="true"></i>
+                    <p class="text-green-600 text-lg font-semibold">JavaScript</p>
+                </div>
+
+                <div class="">
+                    <i class="text-green-600 text-4xl  devicon-jquery-plain" aria-hidden="true"></i>
+                    <p class="text-green-600 text-lg font-semibold">jQuery</p>
+                </div>
+                
+                <div class="">
+                    <i class="text-green-600 text-4xl  devicon-react-original" aria-hidden="true"></i>
+                    <p class="text-green-600 text-lg font-semibold">React</p>
+                </div>
+            </div>
+
+            <div class="flex w-full flex-start space-x-6 mx-auto">
+                <div class="">
+                    <i class="text-green-600 text-4xl  devicon-git-plain" aria-hidden="true"></i>
+                    <p class="text-green-600 text-lg font-semibold">Git</p>
+                </div>
+
+                <div class="">
+                    <i class="text-green-600 text-4xl  devicon-github-plain" aria-hidden="true"></i>
+                    <p class="text-green-600 text-lg font-semibold">Github</p>
+                </div>
+                
+                <div class="">
+                    <i class="text-green-600 text-4xl  fas fa-terminal" aria-hidden="true"></i>
+                    <p class="text-green-600 text-lg font-semibold">Command Line</p>
+                </div>
+                
+                <div class="">
+                    <i class="text-green-600 text-4xl  devicon-visualstudio-plain" aria-hidden="true"></i>
+                    <p class="text-green-600 text-lg font-semibold">VS Code</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="font-serif flex flex-col w-[90%] lg:w-[75%] mx-auto">
+            <span class="text-green-800 font-semibold text-xl">Currently Working on:</span>
+            <p class="text-green-500  my-2 text-lg font-semibold">Improving my skills in, and understanding of vanilla JavaScript and React. Also, having fun with #100DaysOfCode building & animating things via CSS.</p>
+        </div>
+        
     </section>
+    <hr class="mt-12 h-[3px]  w-[90%] lg:w-[75%] mx-auto bg-green-600">
+    <!-- Work section -->
+    <section class="flex w-full work-section justify-center mt-10 h-12 border-2"></section>
 
 
 
