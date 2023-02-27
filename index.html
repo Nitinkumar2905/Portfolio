@@ -44,11 +44,11 @@
 
        <menu class=" hidden md:flex w-[70%] md:w-[75%] lg:w-[70%] justify-end items-center space-x-2 ">
         <div class="flex w-full space-x-4 md:space-x-6 xl:space-x-8">
-            <li class=""><a class="text-lg text-green-700 hover:text-black  font-semibold" href="#">Skills & Tools</a></li>
-            <li class=""><a class="text-lg text-green-700 hover:text-black  font-semibold" href="#">Work</a></li>
+            <li class=""><a class="text-lg text-green-700 hover:text-black  font-semibold" href="#skills">Skills & Tools</a></li>
+            <li class=""><a class="text-lg text-green-700 hover:text-black  font-semibold" href="#work">Work</a></li>
         </div>
         <div class="flex space-x-4 w-[45rem] md:w-[50rem] lg:w-[45rem] pl-4 md:pl-8">
-            <button class="border-2 border-green-500 px-2 py-1 rounded-md text-green-700 hover:text-black "><a class=" font-semibold  text-xl md:text-lg" href="#">Contact Me</a></button>
+            <button class="border-2 border-green-500 px-2 py-1 rounded-md text-green-700 hover:text-black "><a class=" font-semibold  text-xl md:text-lg" href="#contact">Contact Me</a></button>
             <button class="border-2 border-green-500 px-2 py-1 rounded-md text-green-700 hover:text-black "><a class=" font-semibold  text-xl md:text-lg" href="#">Download CV</a></button>
         </div>
 
@@ -67,7 +67,7 @@
     </section>
     <hr class="mt-12 h-[3px]  w-[90%] lg:w-[75%] mx-auto bg-green-600">
     <!-- skills & tools -->
-    <section class="hero-section flex flex-col w-full justify-center ">
+    <section id="skills" class="hero-section flex flex-col w-full justify-center ">
         <main class="flex flex-col mt-5 w-[90%] lg:w-[75%] space-y-5  mx-auto">
            <div class="text-green-800 font-semibold text-2xl">SKILLS & TOOLS</div>
            <span class="text-green-600 text-3xl font-serif font-semibold">My Toolbox & Things I Can Do</span>
@@ -110,8 +110,6 @@
             </div>
 
             <div class="flex w-full flex-start space-x-6 mx-auto">
-               
-
                 <div class="">
                     <i class="text-green-600 text-4xl  devicon-github-plain" aria-hidden="true"></i>
                     <p class="text-green-600 text-lg font-semibold">Github</p>
@@ -138,7 +136,7 @@
     </section>
     <hr class="mt-12 h-[3px]  w-[90%] lg:w-[75%] mx-auto bg-green-600">
     <!-- Work section -->
-    <section class="flex flex-col w-full work-section items-center mt-10  font-serif">
+    <section id="work" class="flex flex-col w-full work-section items-center mt-10  font-serif">
         <div class="flex flex-col mt-5 w-[90%] lg:w-[75%] space-y-3  mx-auto">
             <div class="text-green-800 font-semibold text-2xl">WORK</div>
             <span class="text-green-600 text-xl font-serif font-semibold">A Selection Of Stuff I've Built</span>
@@ -191,72 +189,78 @@
 
     <hr class="mt-12 h-[3px]  w-[90%] lg:w-[75%] mx-auto bg-green-600">
 
+    <!-- needs to add this icon -->
+    <!-- <svg viewBox="0 0 248 31" class= "text-white w-auto h-5">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M25.517 0C18.712 0 14.46 3.382 12.758 10.146c2.552-3.382 5.529-4.65 8.931-3.805 1.941.482 3.329 1.882 4.864 3.432 2.502 2.524 5.398 5.445 11.722 5.445 6.804 0 11.057-3.382 12.758-10.145-2.551 3.382-5.528 4.65-8.93 3.804-1.942-.482-3.33-1.882-4.865-3.431C34.736 2.92 31.841 0 25.517 0zM12.758 15.218C5.954 15.218 1.701 18.6 0 25.364c2.552-3.382 5.529-4.65 8.93-3.805 1.942.482 3.33 1.882 4.865 3.432 2.502 2.524 5.397 5.445 11.722 5.445 6.804 0 11.057-3.381 12.758-10.145-2.552 3.382-5.529 4.65-8.931 3.805-1.941-.483-3.329-1.883-4.864-3.432-2.502-2.524-5.398-5.446-11.722-5.446z" fill="#ffffff"></path>
+    </svg> -->
     <!-- footer -->
-    <footer class="flex flex-col border-green-900 w-[90%] lg:w-[75%] mx-auto mt-5 mb-6">
-        <div class="flex flex-col space-y-3 my-10">
-            <div class="font-semibold text-green-800 text-3xl">Contact</div>
-            <span class="font-semibold text-green-600 text-2xl">Get in Touch</span>
-            <p class="text-green-600 text-lg font-semibold lg:w-[55%]">Dropping a line to say g'day, ask for my resume or see if we can build something amazing together? I'd love to hear from you!</p>
-        </div>
-
-        <span class="text-green-500 font-semibold">Fill in your info in the form below and I look forward to hearing from you!</span>
-        <menu class="lg:relative flex space-y-12 lg:space-y-0 flex-col lg:flex-row  w-full my-8">
-            <!-- contact section -->
-            <main class="flex flex-col lg:w-1/2 space-y-3 h-full">
-                <form class="flex flex-col w-full space-y-6 h-full" action="" method="post">
-                    <div class="flex flex-col px-4">
-                        <label class="text-xl text-green-600 font-semibold" for="name">Name:</label>
-                        <input class="py-2 bg-green-200 text-green-700 focus:outline-green-600 w-full xl:w-[95%] font-semibold text-lg " type="text">
-                    </div>
-
-                    <div class="flex flex-col px-4">
-                        <label class="text-xl text-green-600 font-semibold" for="email">Email:</label>
-                        <input class="py-2 bg-green-200 text-green-700 focus:outline-green-600 w-full xl:w-[95%] font-semibold text-lg " type="email">
-                    </div>
-
-                    <div class="flex flex-col px-4">
-                        <label class="text-xl text-green-600 font-semibold" for="contact">Contact No.</label>
-                        <input class="py-2 bg-green-200 text-green-700 focus:outline-green-600 w-full xl:w-[95%] font-semibold text-lg " type="number">
-                    </div>
-
-                    <div class="flex flex-col px-4">
-                        <label class="text-xl text-green-600 font-semibold " for="message">Message:</label>
-                        <textarea class="bg-green-200 text-green-700 focus:outline-green-600 w-full xl:w-[95%] font-semibold text-lg" name="message" id="message" cols="30" rows="3"></textarea>
-                    </div>
-
-                    <div class="px-4 pt-8">
-                        <button class="py-2 text-green-700 border-green-700 hover:text-black font-semibold text-2xl border-2 w-full xl:w-[95%]" type="submit">Send Email</button>
-                    </div>
-                </form>
-            </main>
-            <!-- social icon section -->
-            <div class="flex flex-col h-full lg:w-[30vw] lg:right-0 lg:absolute">
-                <span class="text-green-800 font-semibold text-xl">Feeling social? Find me on these online spaces too!</span>
-
-                <div class="flex space-x-6 w-1/2 mt-3 pl-2">
-                    <li>
-                        <a href="https://github.com/Nitinkumar2905" target="_blank" aria-label="open link to nitin kumar's github page."><i class="text-green-600 fab text-2xl hover:text-green-900 fa-github" aria-hidden="true"></i></a>
-                      </li>
-
-                    <li>
-                        <a href="https://codepen.io/Nitin-codepen" target="_blank" aria-label="open link to nitin kumar's CodePen page."><i class="text-green-600 fab text-2xl hover:text-green-900 fa-codepen" aria-hidden="true"></i></a>
-                    </li>
-
-                    <li>
-                        <a href="https://www.linkedin.com/in/nitin-kumar-1a7250238/" target="_blank" aria-label="open link to nitin kumar's linkedin page"><i class="text-green-600 hover:text-green-900 devicon-linkedin-plain text-2xl"></i></a>
-                    </li>
-
-                    <li>
-                        <a href="http://instagram.com/nitin__nimble" target="_blank" aria-label="open link to nitin kumar's instagram page."><i class="text-green-600 hover:text-green-900 text-2xl fab fa-instagram" aria-hidden="true"></i></a>
-                      </li>
-                </div>
+    <section id="contact" class="py-10">
+        <div class="flex flex-col border-green-900 w-[90%] lg:w-[75%] mx-auto mt-5 mb-6" >
+            <div class="flex flex-col space-y-3 my-10">
+                <div class="font-semibold text-green-800 text-3xl">Contact</div>
+                <span class="font-semibold text-green-600 text-2xl">Get in Touch</span>
+                <p class="text-green-600 text-lg font-semibold lg:w-[55%]">Dropping a line to say g'day, ask for my resume or see if we can build something amazing together? I'd love to hear from you!</p>
             </div>
-
-        </menu>
-
-        <div class="mx-auto w-fit text-xl text-green-600 font-semibold"><span>&copy;</span>Designed and Coded with 💚 by Nitin kumar</div>
-
-    </footer>
+            
+            <span class="text-green-500 font-semibold">Fill in your info in the form below and I look forward to hearing from you!</span>
+            <menu class="lg:relative flex space-y-12 lg:space-y-0 flex-col lg:flex-row  w-full my-8">
+                <!-- contact section -->
+                <main class="flex flex-col lg:w-1/2 space-y-3 h-full">
+                    <form class="flex flex-col w-full space-y-6 h-full" action="" method="post">
+                        <div class="flex flex-col px-4">
+                            <label class="text-xl text-green-600 font-semibold" for="name">Name:</label>
+                            <input class="py-2 bg-green-200 text-green-700 focus:outline-green-600 w-full xl:w-[95%] font-semibold text-lg " type="text">
+                        </div>
+                        
+                        <div class="flex flex-col px-4">
+                            <label class="text-xl text-green-600 font-semibold" for="email">Email:</label>
+                            <input class="py-2 bg-green-200 text-green-700 focus:outline-green-600 w-full xl:w-[95%] font-semibold text-lg " type="email">
+                        </div>
+                        
+                        <div class="flex flex-col px-4">
+                            <label class="text-xl text-green-600 font-semibold" for="contact">Contact No.</label>
+                            <input class="py-2 bg-green-200 text-green-700 focus:outline-green-600 w-full xl:w-[95%] font-semibold text-lg " type="number">
+                        </div>
+                        
+                        <div class="flex flex-col px-4">
+                            <label class="text-xl text-green-600 font-semibold " for="message">Message:</label>
+                            <textarea class="bg-green-200 text-green-700 focus:outline-green-600 w-full xl:w-[95%] font-semibold text-lg" name="message" id="message" cols="30" rows="3"></textarea>
+                        </div>
+                        
+                        <div class="px-4 pt-8">
+                            <button class="py-2 text-green-700 border-green-700 hover:text-black font-semibold text-2xl border-2 w-full xl:w-[95%]" type="submit">Send Email</button>
+                        </div>
+                    </form>
+                </main>
+                <!-- social icon section -->
+                <div class="flex flex-col h-full lg:w-[30vw] lg:right-0 lg:absolute">
+                    <span class="text-green-800 font-semibold text-xl">Feeling social? Find me on these online spaces too!</span>
+                    
+                    <div class="flex space-x-6 w-1/2 mt-3 pl-2">
+                        <li>
+                            <a href="https://github.com/Nitinkumar2905" target="_blank" aria-label="open link to nitin kumar's github page."><i class="text-green-600 fab text-2xl hover:text-green-900 fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://codepen.io/Nitin-codepen" target="_blank" aria-label="open link to nitin kumar's CodePen page."><i class="text-green-600 fab text-2xl hover:text-green-900 fa-codepen" aria-hidden="true"></i></a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://www.linkedin.com/in/nitin-kumar-1a7250238/" target="_blank" aria-label="open link to nitin kumar's linkedin page"><i class="text-green-600 hover:text-green-900 devicon-linkedin-plain text-2xl"></i></a>
+                        </li>
+                        
+                        <li>
+                            <a href="http://instagram.com/nitin__nimble" target="_blank" aria-label="open link to nitin kumar's instagram page."><i class="text-green-600 hover:text-green-900 text-2xl fab fa-instagram" aria-hidden="true"></i></a>
+                        </li>
+                    </div>
+                </div>
+                
+            </menu>
+            
+            <div class="mx-auto w-fit text-xl text-green-600 font-semibold"><span>&copy;</span>Designed and Coded with 💚 by Nitin kumar</div>
+            
+        </div>
+    </section>
 
 
 
