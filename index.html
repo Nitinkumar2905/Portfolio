@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./input.css">
 </head>
 <body class=" bg-green-100 w-full font-serif">
-    <header class=" z-10 sticky top-0 left-0 w-full md:w-[95%] md:mx-auto lg:pl-16 block md:flex h-20  bg-green-100 head-bg ">
+    <header class="z-10 sticky top-0 left-0 w-full md:w-[95%] md:mx-auto lg:pl-16 block md:flex h-20  bg-green-100 head-bg ">
         <nav class="flex w-full md:w-[25%] lg:w-[40%] h-full items-center">
             <div class="px-2 flex items-end space-x-2">
                 <img class="h-12 rounded-full cursor-pointer" src="./img/profile-pic.jpg" alt="">
@@ -30,14 +30,14 @@
         </nav>
 
         <!-- mobile -menu -->
-        <div  class="MyDiv mobile-menu flex md:hidden w-full h-[20vh] bg-green-100 border-y-[1px] border-green-600 space-x-2 pt-4">
+        <div  class="MyDiv mobile-menu flex md:hidden w-full h-[20vh] bg-green-100 bg-opacity-90 border-y-[1px] border-green-600 space-x-2 pt-4">
             <div class="flex flex-col w-full items-center">
-                <li class="w-full  h-12 px-2 py-2 list-none text-green-600 text-center"><a class="text-xl hover:text-black font-semibold" href="#">Skills & Tools</a></li>
-                <li class="w-full  h-12 px-2 py-2 list-none text-green-600 text-center"><a class="text-xl hover:text-black font-semibold" href="#">Work</a></li>
+                <li class="w-full  h-12 px-2 py-2 list-none text-green-600 text-center"><a class="text-xl hover:text-black font-semibold" href="#skills">Skills & Tools</a></li>
+                <li class="w-full  h-12 px-2 py-2 list-none text-green-600 text-center"><a class="text-xl hover:text-black font-semibold" href="#work">Work</a></li>
             </div>
 
             <div class="flex flex-col w-full items-center space-y-2 ">
-                <button class="h-12 w-[160px] cursor-auto px-2 py-2 border-green-600 rounded-md border-2  "><a class="text-green-600 hover:text-black font-semibold text-xl" href="#">Contact Me</a></button>
+                <button class="h-12 w-[160px] cursor-auto px-2 py-2 border-green-600 rounded-md border-2  "><a class="text-green-600 hover:text-black font-semibold text-xl" href="#contact">Contact Me</a></button>
                 <button class="h-12 w-[160px] cursor-auto px-2 py-2 border-green-600 rounded-md border-2  "><a class="text-green-600 hover:text-black font-semibold text-xl" href="#">Download CV</a></button>
             </div>
         </div>
@@ -67,31 +67,33 @@
     </section>
     <hr class="mt-12 h-[3px]  w-[90%] lg:w-[75%] mx-auto bg-green-600">
     <!-- skills & tools -->
-    <section id="skills" class="hero-section flex flex-col w-full justify-center ">
-        <main class="flex flex-col mt-5 w-[90%] lg:w-[75%] space-y-5  mx-auto">
-           <div class="text-green-800 font-semibold text-2xl">SKILLS & TOOLS</div>
-           <span class="text-green-600 text-3xl font-serif font-semibold">My Toolbox & Things I Can Do</span>
-           <p class="text-green-500 text-xl font-serif font-semibold">The skills, tools and technologies i use to bring your products to life:</p>
-        </main>
+    <section id="skills" class="pt-20">
+        <div class="hero-section flex flex-col w-full justify-center">
 
-        <div class="flex flex-col my-10 w-[90%] lg:w-[75%] space-y-12  mx-auto">
-            <div class="flex w-full flex-start flex-wrap space-x-6 mx-auto">
-                <div class="">
-                    <i class="text-4xl text-green-500  devicon-html5-plain" aria-hidden="true"></i>
-                    <p class="text-green-600 text-lg font-semibold">HTML5</p>
-                </div>
-                
-                <div class="">
-                    <i class="text-4xl text-green-500   devicon-css3-plain" aria-hidden="true"></i>
-                    <p class="text-green-600 text-lg font-semibold">CSS3</p>
-                </div>
-                
-                <div class="">
-                    <i class="text-4xl text-green-500  fab fa-js" aria-hidden="true"></i>
-                    <p class="text-green-600 text-lg font-semibold">JavaScript</p>
-                </div>
+            <main class="flex flex-col mt-5 w-[90%] lg:w-[75%] space-y-5  mx-auto">
+                <div class="text-green-800 font-semibold text-4xl">SKILLS & TOOLS</div>
+                <span class="text-green-600 text-3xl font-serif font-semibold">My Toolbox & Things I Can Do</span>
+                <p class="text-green-500 text-xl font-serif font-semibold">The skills, tools and technologies i use to bring your products to life:</p>
+            </main>
+            
+            <div class="flex flex-col my-10 w-[90%] lg:w-[75%] space-y-12  mx-auto">
+                <div class="flex w-full flex-start flex-wrap space-x-6 mx-auto">
+                    <div class="">
+                        <i class="text-4xl text-green-500  devicon-html5-plain" aria-hidden="true"></i>
+                        <p class="text-green-600 text-lg font-semibold">HTML5</p>
+                    </div>
+                    
+                    <div class="">
+                        <i class="text-4xl text-green-500   devicon-css3-plain" aria-hidden="true"></i>
+                        <p class="text-green-600 text-lg font-semibold">CSS3</p>
+                    </div>
+                    
+                    <div class="">
+                        <i class="text-4xl text-green-500  fab fa-js" aria-hidden="true"></i>
+                        <p class="text-green-600 text-lg font-semibold">JavaScript</p>
+                    </div>
             </div>
-
+            
             <div class="flex w-full flex-start flex-wrap space-x-6 mx-auto">
                 <div class="">
                     <i class="text-green-600 text-4xl  devicon-jquery-plain" aria-hidden="true"></i>
@@ -102,13 +104,13 @@
                     <i class="text-green-600 text-4xl  devicon-react-original" aria-hidden="true"></i>
                     <p class="text-green-600 text-lg font-semibold">React</p>
                 </div>
-
+                
                 <div class="">
                     <i class="text-green-600 text-4xl  devicon-git-plain" aria-hidden="true"></i>
                     <p class="text-green-600 text-lg font-semibold">Git</p>
                 </div>
             </div>
-
+            
             <div class="flex w-full flex-start space-x-6 mx-auto">
                 <div class="">
                     <i class="text-green-600 text-4xl  devicon-github-plain" aria-hidden="true"></i>
@@ -125,66 +127,70 @@
                     <p class="text-green-600 text-lg font-semibold">VS Code</p>
                 </div>
             </div>
-
+            
         </div>
-
-        <div class="flex flex-col w-[90%] lg:w-[75%] mx-auto">
-            <span class="text-green-600 font-semibold text-xl">Currently Working on:</span>
-            <p class="text-green-500  my-2 text-lg font-semibold">Improving my skills in, and understanding of vanilla JavaScript and React. Also, having fun with #100DaysOfCode building & animating things via CSS.</p>
+        
+            <div class="flex flex-col w-[90%] lg:w-[75%] mx-auto">
+                <span class="text-green-600 font-semibold text-xl">Currently Working on:</span>
+                <p class="text-green-500  my-2 text-lg font-semibold">Improving my skills in, and understanding of vanilla JavaScript and React. Also, having fun with #100DaysOfCode building & animating things via CSS.</p>
+            </div>
         </div>
         
     </section>
     <hr class="mt-12 h-[3px]  w-[90%] lg:w-[75%] mx-auto bg-green-600">
     <!-- Work section -->
-    <section id="work" class="flex flex-col w-full work-section items-center mt-10  font-serif">
-        <div class="flex flex-col mt-5 w-[90%] lg:w-[75%] space-y-3  mx-auto">
-            <div class="text-green-800 font-semibold text-2xl">WORK</div>
-            <span class="text-green-600 text-xl font-serif font-semibold">A Selection Of Stuff I've Built</span>
-         </div>
-
-         <div class="flex flex-col my-6 w-[88%] lg:w-[74%] space-y-3 mx-auto h-full">
-            <span class="text-green-600 font-semibold text-2xl">Rocketman-clone</span>
-            <p class="text-green-500 text-lg font-semibold">This is a clone project completed during my first attempt of applying my frontend skills in practical and i amazed my self with the output</p>
-            <div class="space-x-2">
-                <button class="w-32 px-2 py-1 border-2 border-green-600 rounded-md text-green-700 hover:text-black"><a class=" w-full text-xl  font-semibold" href="https://github.com/Nitinkumar2905/Rocketman">Github</a></button>
-                <button class="w-32 px-2 py-1 border-2 border-green-600 rounded-md text-green-700 hover:text-black"><a class=" w-full text-xl  font-semibold" href="https://rocketmanclone.netlify.app/">Live </a></button>
+    <section id="work" class="pt-10">
+        <div class="flex flex-col w-full work-section items-center mt-10  font-serif">
+            
+            <div class="flex flex-col mt-5 w-[90%] lg:w-[75%] space-y-3  mx-auto">
+                <div class="text-green-800 font-semibold text-4xl">WORK</div>
+                <span class="text-green-600 text-xl font-serif font-semibold">A Selection Of Stuff I've Built</span>
             </div>
-        </div>
-        <hr class="mt-12 h-[2px]  w-[90%] lg:w-[74%] mx-auto bg-green-600">
-
-
-         <div class="flex flex-col my-6 w-[88%] lg:w-[74%] space-y-3 mx-auto h-full">
-            <span class="text-green-600 font-semibold text-2xl">Random Character Generator</span>
-            <p class="text-green-500 text-lg font-semibold">This project is based on concept random character generator using <a class="text-green-600 underline" href="https://swapi.dev/">starwars api</a>.</p>
-            <div class="space-x-2">
-                <button class="w-32 px-2 py-1 border-2 border-green-600 rounded-md text-green-700 hover:text-black"><a class=" w-full text-xl  font-semibold" href="https://github.com/Nitinkumar2905/jquery">Github</a></button>
-                <button class="w-32 px-2 py-1 border-2 border-green-600 rounded-md text-green-700 hover:text-black"><a class=" w-full text-xl  font-semibold" href="https://rcg-api.netlify.app/">Live </a></button>
+            
+            <div class="flex flex-col my-6 w-[88%] lg:w-[74%] space-y-3 mx-auto h-full">
+                <span class="text-green-600 font-semibold text-2xl">Rocketman-clone</span>
+                <p class="text-green-500 text-lg font-semibold">This is a clone project completed during my first attempt of applying my frontend skills in practical and i amazed my self with the output</p>
+                <div class="space-x-2">
+                    <button class="w-32 px-2 py-1 border-2 border-green-600 rounded-md text-green-700 hover:text-black"><a class=" w-full text-xl  font-semibold" href="https://github.com/Nitinkumar2905/Rocketman" target="_blank">Github</a></button>
+                    <button class="w-32 px-2 py-1 border-2 border-green-600 rounded-md text-green-700 hover:text-black"><a class=" w-full text-xl  font-semibold" href="https://rocketmanclone.netlify.app/" target="_blank">Live </a></button>
+                </div>
             </div>
-        </div>
-        <hr class="mt-12 h-[2px]  w-[90%] lg:w-[74%] mx-auto bg-green-600">
-
-
-        <div class="flex flex-col my-6 w-[88%] lg:w-[74%] space-y-3 mx-auto h-full">
-            <span class="text-green-600 font-semibold text-2xl">Boloforms</span>
-            <p class="text-green-500 text-lg font-semibold">Another clone project. But, still this project took 5 days to give finishing touch because to do clone any website u still need skills to copy every edge of webpages</p>
-            <div class="space-x-2">
-                <button class="w-32 px-2 py-1 border-2 border-green-600 rounded-md text-green-700 hover:text-black"><a class=" w-full text-xl font-semibold" href="https://github.com/Nitinkumar2905/BoloForms-project">Github</a></button>
-                <button class="w-32 px-2 py-1 border-2 border-green-600 rounded-md text-green-700 hover:text-black"><a class=" w-full text-xl font-semibold" href="https://boloforms-clone-final.netlify.app/">Live </a></button>
+            <hr class="mt-12 h-[2px]  w-[90%] lg:w-[74%] mx-auto bg-green-600">
+            
+            
+            <div class="flex flex-col my-6 w-[88%] lg:w-[74%] space-y-3 mx-auto h-full">
+                <span class="text-green-600 font-semibold text-2xl">Random Character Generator</span>
+                <p class="text-green-500 text-lg font-semibold">This project is based on concept random character generator using <a class="text-green-600 underline" href="https://swapi.dev/">starwars api</a>.</p>
+                <div class="space-x-2">
+                    <button class="w-32 px-2 py-1 border-2 border-green-600 rounded-md text-green-700 hover:text-black"><a class=" w-full text-xl  font-semibold" href="https://github.com/Nitinkumar2905/jquery" target="_blank">Github</a></button>
+                    <button class="w-32 px-2 py-1 border-2 border-green-600 rounded-md text-green-700 hover:text-black"><a class=" w-full text-xl  font-semibold" href="https://rcg-api.netlify.app/" target="_blank">Live </a></button>
+                </div>
             </div>
-        </div>
-        <hr class="mt-12 h-[2px]  w-[90%] lg:w-[74%] mx-auto bg-green-600">
-
-        <div class="flex flex-col my-6 w-[88%] lg:w-[74%] space-y-3 mx-auto h-full">
-            <span class="text-green-600 font-semibold text-2xl">Pdf-Merger</span>
-            <p class="text-green-500 text-lg font-semibold">Pdf-Merger is full stack project and uses to merge multiple pdfs in one pdf for better documentation</p>
-            <div>
-                <!-- <button class="w-32 px-2 py-1 border-2 border-green-600 rounded-md"><a class="text-green-700 w-full text-xl hover:text-black font-semibold" href="#">Live </a></button> -->
-                <button class="w-32 px-2 py-1 border-2 border-green-600 rounded-md text-green-700 hover:text-black"><a class="w-full text-xl  font-semibold" href="https://github.com/Nitinkumar2905/Merge-your-pdfs">Github</a></button>
+            <hr class="mt-12 h-[2px]  w-[90%] lg:w-[74%] mx-auto bg-green-600">
+            
+            
+            <div class="flex flex-col my-6 w-[88%] lg:w-[74%] space-y-3 mx-auto h-full">
+                <span class="text-green-600 font-semibold text-2xl">Boloforms</span>
+                <p class="text-green-500 text-lg font-semibold">Another clone project. But, still this project took 5 days to give finishing touch because to do clone any website u still need skills to copy every edge of webpages</p>
+                <div class="space-x-2">
+                    <button class="w-32 px-2 py-1 border-2 border-green-600 rounded-md text-green-700 hover:text-black"><a class=" w-full text-xl font-semibold" href="https://github.com/Nitinkumar2905/BoloForms-project" target="_blank">Github</a></button>
+                    <button class="w-32 px-2 py-1 border-2 border-green-600 rounded-md text-green-700 hover:text-black"><a class=" w-full text-xl font-semibold" href="https://boloforms-clone-final.netlify.app/" target="_blank">Live </a></button>
+                </div>
             </div>
+            <hr class="mt-12 h-[2px]  w-[90%] lg:w-[74%] mx-auto bg-green-600">
+            
+            <div class="flex flex-col my-6 w-[88%] lg:w-[74%] space-y-3 mx-auto h-full">
+                <span class="text-green-600 font-semibold text-2xl">Pdf-Merger</span>
+                <p class="text-green-500 text-lg font-semibold">Pdf-Merger is full stack project and uses to merge multiple pdfs in one pdf for better documentation</p>
+                <div>
+                    <!-- <button class="w-32 px-2 py-1 border-2 border-green-600 rounded-md"><a class="text-green-700 w-full text-xl hover:text-black font-semibold" href="#">Live </a></button> -->
+                    <button class="w-32 px-2 py-1 border-2 border-green-600 rounded-md text-green-700 hover:text-black"><a class="w-full text-xl  font-semibold" href="https://github.com/Nitinkumar2905/Merge-your-pdfs" target="_blank">Github</a></button>
+                </div>
+            </div>
+            <!-- <hr class="mt-12 h-[2px]  w-[90%] lg:w-[74%] mx-auto bg-green-600"> -->
+            
+            
         </div>
-        <!-- <hr class="mt-12 h-[2px]  w-[90%] lg:w-[74%] mx-auto bg-green-600"> -->
-        
-        
     </section>
 
     <hr class="mt-12 h-[3px]  w-[90%] lg:w-[75%] mx-auto bg-green-600">
@@ -194,10 +200,10 @@
     <path fill-rule="evenodd" clip-rule="evenodd" d="M25.517 0C18.712 0 14.46 3.382 12.758 10.146c2.552-3.382 5.529-4.65 8.931-3.805 1.941.482 3.329 1.882 4.864 3.432 2.502 2.524 5.398 5.445 11.722 5.445 6.804 0 11.057-3.382 12.758-10.145-2.551 3.382-5.528 4.65-8.93 3.804-1.942-.482-3.33-1.882-4.865-3.431C34.736 2.92 31.841 0 25.517 0zM12.758 15.218C5.954 15.218 1.701 18.6 0 25.364c2.552-3.382 5.529-4.65 8.93-3.805 1.942.482 3.33 1.882 4.865 3.432 2.502 2.524 5.397 5.445 11.722 5.445 6.804 0 11.057-3.381 12.758-10.145-2.552 3.382-5.529 4.65-8.931 3.805-1.941-.483-3.329-1.883-4.864-3.432-2.502-2.524-5.398-5.446-11.722-5.446z" fill="#ffffff"></path>
     </svg> -->
     <!-- footer -->
-    <section id="contact" class="py-10">
+    <section id="contact" class="pt-10">
         <div class="flex flex-col border-green-900 w-[90%] lg:w-[75%] mx-auto mt-5 mb-6" >
             <div class="flex flex-col space-y-3 my-10">
-                <div class="font-semibold text-green-800 text-3xl">Contact</div>
+                <div class="font-semibold text-green-800 text-4xl">Contact</div>
                 <span class="font-semibold text-green-600 text-2xl">Get in Touch</span>
                 <p class="text-green-600 text-lg font-semibold lg:w-[55%]">Dropping a line to say g'day, ask for my resume or see if we can build something amazing together? I'd love to hear from you!</p>
             </div>
@@ -261,8 +267,6 @@
             
         </div>
     </section>
-
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
