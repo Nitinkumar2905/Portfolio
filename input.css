@@ -10,33 +10,6 @@
   scroll-behavior: smooth;
 }
 
-.three {
-  /* width: 23.8%; */
-}
-
-/* .col {
-  display: block;
-  float: left;
-  margin: 1% 0 1% 1.6%;
-} */
-
-.col:first-of-type {
-  margin-left: 0;
-}
-
-.cf:before,
-.cf:after {
-  content: " ";
-  display: table;
-}
-
-.cf:after {
-  clear: both;
-}
-
-.cf {
-  *zoom: 1;
-}
 
 .row .three {
   /* padding: 80px 30px; */
@@ -49,11 +22,11 @@
 }
 
 .hamburger .line {
-  width: 40px;
-  height: 5px;
+  width: 30px;
+  height: 3px;
   background-color: green;
   display: block;
-  margin: 8px auto;
+  margin: 6px auto;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -63,57 +36,36 @@
   cursor: pointer;
 } */
 
-#hamburger-5.is-active {
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
 
-#hamburger-5.is-active .line:nth-child(2) {
-  -webkit-transition: none;
-  -o-transition: none;
-  transition: none;
-}
-
-#hamburger-5 .line:nth-child(2) {
-  -webkit-transition-delay: 0.3s;
-  -o-transition-delay: 0.3s;
-  transition-delay: 0.3s;
-}
-
-#hamburger-5.is-active .line:nth-child(2) {
-  opacity: 0;
-  /* display: none; */
-}
-
-#hamburger-5.is-active .line:nth-child(1),
-#hamburger-5.is-active .line:nth-child(3) {
-  width: 25px;
-  -webkit-transform-origin: right;
-  -moz-transform-origin: right;
-  -ms-transform-origin: right;
-  -o-transform-origin: right;
-  transform-origin: right;
-}
-
-#hamburger-5.is-active .line:nth-child(1) {
-  -webkit-transform: translateY(15px) rotate(45deg);
-  -ms-transform: translateY(15px) rotate(45deg);
-  -o-transform: translateY(15px) rotate(45deg);
-  transform: translateY(15px) rotate(45deg);
-}
-
-#hamburger-5.is-active .line:nth-child(3) {
-  -webkit-transform: translateY(-15px) rotate(-45deg);
-  -ms-transform: translateY(-15px) rotate(-45deg);
-  -o-transform: translateY(-15px) rotate(-45deg);
-  transform: translateY(-15px) rotate(-45deg);
-}
 
 @media (max-width: 767px) { 
     .mobile-menu{
         display: none;
     }
+}
+
+.close {
+  position: absolute;
+  /* border:2px solid red; */
+  right: 0px;
+  top: 0px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.6;
+}
+
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 3px;
+  background-color: rgb(4, 48, 4);
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
 }
 
